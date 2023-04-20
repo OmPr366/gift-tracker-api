@@ -10,7 +10,7 @@ passport.use(
         "256318582689-q93943i476q3ei2lthpp8mfcnp3ismvr.apps.googleusercontent.com",
       clientSecret: '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',
       callbackURL:
-        "http://localhost:3000/auth/google/callback?redirect_url=http://127.0.0.1:5173/person",
+        "http://localhost:3000/auth/google/callback?redirect_url=https://gift-tracker-frontend.vercel.app/person",
     },
     async (accessToken, refreshToken, profile, done) => {
       const { id, displayName } = profile;
