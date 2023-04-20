@@ -10,7 +10,7 @@ passport.use(
         "256318582689-q93943i476q3ei2lthpp8mfcnp3ismvr.apps.googleusercontent.com",
       clientSecret: "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",
       callbackURL:
-        "https://gift-tacker-api.onrender.com/auth/google/callback?redirect_url=https://gift-tracker-frontend.vercel.app/person",
+        "https://gift-tacker-api.onrender.com/auth/google/callback?redirect_url=https://dazzling-genie-8f9fda.netlify.app/person",
     },
     async (accessToken, refreshToken, profile, done) => {
       const { id, displayName } = profile;
