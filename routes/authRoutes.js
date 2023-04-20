@@ -22,7 +22,7 @@ router.get(
   (req, res) => {
     console.log("USer ID  Connecting :- ")
     console.log("USer ID :- ",req.user.id)
-    const token = jwt.sign({ userId: req.user.id }, keys.jwt.secret, {
+    const token = jwt.sign({ userId: req.user.id }, 'IOPBHUVGYASDRTYGHETDGVSDFRPRTHBG', {
       expiresIn: "1h",
     });
     res.redirect(
